@@ -1,0 +1,12 @@
+.words {
+    margin: 10px 0;
+}
+
+.words li span {
+    padding: 0 5px;
+}
+
+.searchInput {
+    max-width: 500px;
+    margin-right: 10px;
+}

@@ -7,6 +7,7 @@ import ru.regiuss.practice.dictinoary.server.dto.ResponseDTO;
 import ru.regiuss.practice.dictinoary.server.dto.WordDTO;
 import ru.regiuss.practice.dictinoary.server.mapper.WordMapper;
 import ru.regiuss.practice.dictinoary.server.model.Dictionary;
+import ru.regiuss.practice.dictinoary.server.model.DictionaryFilter;
 import ru.regiuss.practice.dictinoary.server.model.Page;
 import ru.regiuss.practice.dictinoary.server.model.Word;
 import ru.regiuss.practice.dictinoary.server.service.DictionaryService;
@@ -30,12 +31,8 @@ public class DictionaryController {
     }
 
     @GetMapping("/{dictionaryID}")
-    public ResponseDTO<PageDTO<WordDTO>> getWords(
-            @PathVariable int dictionaryID,
-            @RequestParam(defaultValue = "0") int skip,
-            @RequestParam(defaultValue = "20") int count
-    ) {
-        Page<Word> page = service.getWords(dictionaryID-1, skip, count);
+    public ResponseDTO<PageDTO<WordDTO>> getWords(@PathVariable int dictionaryID, DictionaryFilter filter) {
+        Page<Word> page = service.getWords(dictionaryID-1, filter);
         PageDTO<WordDTO> dto = new PageDTO<>(
                 page.getItems().stream().map(mapper).collect(Collectors.toList()),
                 page.getTotal(),
@@ -46,20 +43,7 @@ public class DictionaryController {
 
     @PostMapping("/{dictionaryID}")
     public ResponseDTO<WordDTO> add(@PathVariable int dictionaryID, @RequestBody WordDTO dto) {
-        Word word = service.add(new Word(dto.getKey(), dto.getValue()), dictionaryID-1);
+        Word word = service.add(new Word(dto.getKey(), dto.getValues()), dictionaryID-1);
         return new ResponseDTO<>(mapper.apply(word));
     }
-
-    @DeleteMapping("/{dictionaryID}")
-    public ResponseDTO<Void> delete(@PathVariable int dictionaryID, @RequestParam String key) {
-        service.delete(dictionaryID-1, key);
-        return new ResponseDTO<>(null);
-    }
-
-    @GetMapping("/{dictionaryID}/search")
-    public ResponseDTO<WordDTO> search(@PathVariable int dictionaryID, @RequestParam String key) {
-        Word word = service.search(dictionaryID-1, key);
-        return new ResponseDTO<>(mapper.apply(word));
-    }
-
 }

@@ -11,8 +11,9 @@ public class WordMapper implements Function<Word, WordDTO> {
     @Override
     public WordDTO apply(Word word) {
         WordDTO dto = new WordDTO();
+        dto.setId(word.getId());
         dto.setKey(word.getKey());
-        dto.setValue(word.getValue());
+        dto.setValues(word.getValues());
         return dto;
     }
 }

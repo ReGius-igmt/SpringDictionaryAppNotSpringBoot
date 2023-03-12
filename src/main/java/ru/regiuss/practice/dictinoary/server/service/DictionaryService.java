@@ -1,7 +1,9 @@
 package ru.regiuss.practice.dictinoary.server.service;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.regiuss.practice.dictinoary.server.model.Dictionary;
+import ru.regiuss.practice.dictinoary.server.model.DictionaryFilter;
 import ru.regiuss.practice.dictinoary.server.model.Page;
 import ru.regiuss.practice.dictinoary.server.model.Word;
 import ru.regiuss.practice.dictinoary.server.repository.WordRepository;
@@ -18,36 +20,34 @@ public class DictionaryService {
     public DictionaryService(WordRepositoryImpl wordRepository) {
         this.wordRepository = wordRepository;
         this.dictionaries = new Dictionary[] {
-                new Dictionary("DIGIT", key -> key == null || key.length() != 5 || !Pattern.matches("[0-9]+", key)),
-                new Dictionary("LATIN", key -> key == null || key.length() != 4 || !Pattern.matches("[A-Za-z]+", key))
+                new Dictionary("DIGIT", key -> {
+                    if(key == null) throw new RuntimeException("key cant been null");
+                    if(key.length() != 5 || !Pattern.matches("[0-9]+", key))
+                        throw new RuntimeException("Ключ должен быть длиной 5 символов и состоять только из цифр");
+                    return false;
+                }),
+                new Dictionary("LATIN", key -> {
+                    if(key == null) throw new RuntimeException("key cant been null");
+                    if(key.length() != 4 || !Pattern.matches("[A-Za-z]+", key))
+                        throw new RuntimeException("Ключ должен быть длиной 4 символа и состоять только из букв латинского алфавита");
+                    return false;
+                })
         };
     }
 
-    public Page<Word> getWords(Integer dictionaryID, int skip, int count) {
+    public Page<Word> getWords(Integer dictionaryID, DictionaryFilter filter) {
         if(dictionaryID == null)
             throw new RuntimeException("dictionary cant been empty");
         if(dictionaryID < 0 || dictionaryID > dictionaries.length-1)
             throw new RuntimeException("dictionary not exist");
-        if(skip < 0) skip = 0;
-        if(count < 1) count = 1;
-        else if(count > 20) count = 20;
-        return wordRepository.findAllByDictionary(dictionaries[dictionaryID].getName(), skip, count);
+        if(filter.getSkip() < 0) filter.setSkip(0);
+        if(filter.getCount() < 1) filter.setCount(1);
+        else if(filter.getCount() > 20) filter.setCount(20);
+        filter.setDictionary(dictionaries[dictionaryID].getName());
+        return wordRepository.findAllByDictionary(filter);
     }
 
-    public void delete(Integer dictionaryID, String key) {
-        if(dictionaryID == null)
-            throw new RuntimeException("dictionary cant been empty");
-        if(dictionaryID < 0 || dictionaryID > dictionaries.length-1)
-            throw new RuntimeException("dictionary not exist");
-        if(key == null || key.isEmpty())
-            throw new RuntimeException("key cant been empty");
-        Dictionary dictionary = dictionaries[dictionaryID];
-        Word word = wordRepository.findByDictionaryAndByKey(dictionary.getName(), key);
-        if(word == null)
-            throw new RuntimeException(String.format("word not found with dictionary %s and key %s", dictionary.getName(), key));
-        wordRepository.delete(word);
-    }
-    
+    @Transactional
     public Word add(Word word, Integer dictionaryID) {
         if(dictionaryID == null)
             throw new RuntimeException("dictionary cant been empty");
@@ -55,12 +55,12 @@ public class DictionaryService {
             throw new RuntimeException("dictionary not exist");
         if(word.getKey() == null || word.getKey().isEmpty())
             throw new RuntimeException("key cant been empty");
-        if(word.getValue() == null || word.getValue().isEmpty())
+        if(word.getValues() == null || word.getValues().isEmpty())
             throw new RuntimeException("value cant been empty");
         Dictionary dictionary = dictionaries[dictionaryID];
         Word fromDB = wordRepository.findByDictionaryAndByKey(dictionary.getName(), word.getKey());
         if(fromDB != null) {
-            fromDB.setValue(word.getValue());
+            fromDB.setValues(word.getValues());
             word = fromDB;
         } else {
             if(dictionary.validate(word.getKey()))
@@ -69,17 +69,6 @@ public class DictionaryService {
         word.setDictionary(dictionary.getName());
         wordRepository.save(word);
         return word;
-    }
-    
-    public Word search(Integer dictionaryID, String key) {
-        if(dictionaryID == null)
-            throw new RuntimeException("dictionary cant been empty");
-        if(dictionaryID < 0 || dictionaryID > dictionaries.length-1)
-            throw new RuntimeException("dictionary not exist");
-        if(key == null || key.isEmpty())
-            throw new RuntimeException("key cant been empty");
-        Dictionary dictionary = dictionaries[dictionaryID];
-        return wordRepository.findByDictionaryAndByKey(dictionary.getName(), key);
     }
 
     public Dictionary[] getDictionaries() {

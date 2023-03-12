@@ -1,6 +1,7 @@
 package ru.regiuss.practice.dictinoary.server.repository;
 
 import org.springframework.stereotype.Repository;
+import ru.regiuss.practice.dictinoary.server.model.DictionaryFilter;
 import ru.regiuss.practice.dictinoary.server.model.Page;
 import ru.regiuss.practice.dictinoary.server.model.Word;
 
@@ -10,5 +11,5 @@ public interface WordRepository {
     void delete(Word word);
     Word findById(int id);
     Word findByDictionaryAndByKey(String dictionary, String key);
-    Page<Word> findAllByDictionary(String dictionary, int skip, int count);
+    Page<Word> findAllByDictionary(DictionaryFilter filter);
 }

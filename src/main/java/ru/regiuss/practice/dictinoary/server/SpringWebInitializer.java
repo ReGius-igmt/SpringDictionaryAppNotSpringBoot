@@ -15,7 +15,6 @@ import javax.servlet.ServletRegistration;
 @Configuration
 @EnableWebMvc
 @ComponentScan("ru.regiuss.practice.dictinoary.server")
-@PropertySource("classpath:server.properties")
 public class SpringWebInitializer implements WebApplicationInitializer {
 
     @Override

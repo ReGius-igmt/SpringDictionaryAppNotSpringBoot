@@ -2,19 +2,23 @@ package ru.regiuss.practice.dictinoary.server.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.orm.jpa.LocalEntityManagerFactoryBean;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
 @Configuration
+@EnableJpaRepositories(basePackages = {"ru.regiuss.practice.dictinoary.server.repository"})
+@EnableTransactionManagement
 public class JpaConfig {
 
     @Bean
-    public EntityManagerFactory entityManagerFactory() {
+    public LocalEntityManagerFactoryBean entityManagerFactory() {
         Properties properties = System.getProperties();
         Map<String, Object> configOverrides = new HashMap<>();
         for (String name : properties.stringPropertyNames()) {
@@ -22,11 +26,16 @@ public class JpaConfig {
                 configOverrides.put("javax.persistence.jdbc.password", properties.get(name));
             }
         }
-        return Persistence.createEntityManagerFactory("mysql", configOverrides);
+        LocalEntityManagerFactoryBean factoryBean = new LocalEntityManagerFactoryBean();
+        factoryBean.setPersistenceUnitName("mysql");
+        factoryBean.setJpaPropertyMap(configOverrides);
+        return factoryBean;
     }
 
     @Bean
-    public EntityManager entityManager(EntityManagerFactory entityManagerFactory) {
-        return entityManagerFactory.createEntityManager();
+    public JpaTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
+        JpaTransactionManager transactionManager = new JpaTransactionManager();
+        transactionManager.setEntityManagerFactory(entityManagerFactory);
+        return transactionManager;
     }
 }
