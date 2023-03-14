@@ -1,511 +1,455 @@
-[16:42:08] [main/INFO]: [ContextLoader] Root WebApplicationContext: initialization started
-[16:42:09] [main/DEBUG]: [AnnotationConfigWebApplicationContext] Refreshing Root WebApplicationContext
-[16:42:09] [main/DEBUG]: [AnnotationConfigWebApplicationContext] Registering component classes: [class ru.regiuss.practice.dictinoary.server.SpringWebInitializer]
-[16:42:09] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\configuration\AppConfig.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\configuration\JpaConfig.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\configuration\SwaggerConfig.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\controller\ExceptionHandler.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\controller\MainController.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\controller\api\v1\DictionaryController.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\controller\api\v1\WordController.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\mapper\WordMapper.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Ignored because not a concrete top-level class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\repository\WordRepository.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\repository\WordRepositoryImpl.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\service\DictionaryService.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\service\WordService.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ServiceModelToSwagger2MapperImpl.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/VendorExtensionsMapperImpl.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ParameterMapperImpl.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ModelMapperImpl.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/LicenseMapperImpl.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/SecurityMapperImpl.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingReferenceScanner.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDocumentationScanner.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/CachingOperationReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/MediaTypeReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingScanner.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiModelReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionLookup.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationModelsProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationDeprecatedReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/ResponseMessagesReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/DefaultTagsProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationTagsReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/ApiOperationReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/DefaultOperationReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterRequestConditionReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterHeadersConditionReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationResponseClassReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/CachingOperationNameGenerator.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterMultiplesReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ModelAttributeParameterExpander.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterTypeReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterRequiredReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterDataTypeReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterDefaultReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterNameReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ExpandedParameterBuilder.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsManager.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/QueryStringUriTemplateDecorator.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/PathMappingDecorator.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/PathSanitizer.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/OperationPathDecorator.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/CachingModelDependencyProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/TypeNameExtractor.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/PropertyDiscriminatorBasedInheritancePlugin.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/XmlModelPlugin.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/SchemaPluginsManager.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/CachingModelPropertiesProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/ObjectMapperBeanPropertyNamingStrategy.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/bean/AccessorsProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/field/FieldProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/XmlPropertyPlugin.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/OptimizedModelPropertiesProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/FactoryMethodProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/CachingModelProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/DefaultModelDependencyProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/JacksonEnumTypeDeterminer.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/DefaultModelProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelPropertyPropertyBuilder.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelTypeNameProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelBuilder.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationImplicitParameterReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/VendorExtensionsReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationResponseClassReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationModelsProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerMediaTypeReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationHttpMethodReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationImplicitParametersReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationAuthReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationHiddenReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationSummaryReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerResponseMessageReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationNicknameIntoUniqueIdReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationPositionReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationNotesReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationTagsReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/parameter/ApiParamParameterBuilder.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/parameter/SwaggerExpandedParameterBuilder.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/SwaggerApiListingReader.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/ClassOrApiAnnotationResourceGrouping.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/InMemorySwaggerResourcesProvider.class]
-[16:42:09] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/ApiResourceController.class]
-[16:42:10] [main/INFO]: [RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[16:42:10] [main/DEBUG]: [RepositoryConfigurationDelegate] Scanning for JPA repositories in packages ru.regiuss.practice.dictinoary.server.repository.
-[16:42:10] [main/INFO]: [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'emBeanDefinitionRegistrarPostProcessor'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'objectMapperConfigurer'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'transactionAttributeSource'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'transactionInterceptor'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
-[16:42:10] [main/DEBUG]: [UiApplicationContextUtils] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@14036429]
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'springWebInitializer'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'appConfig'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'jpaConfig'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerConfig'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'exceptionHandler'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mainController'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'dictionaryController'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'dictionaryService'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'wordRepositoryImpl'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.orm.jpa.SharedEntityManagerCreator#0'
-[16:42:10] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'entityManagerFactory'
-[16:42:10] [main/DEBUG]: [LocalEntityManagerFactoryBean] Building JPA EntityManagerFactory for persistence unit 'mysql'
-[16:42:10] [main/DEBUG]: [logging] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
-[16:42:12] [main/WARN]: [pooling] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-[16:42:14] [main/INFO]: [LocalEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'mysql'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'wordRepositoryImpl' via constructor to bean named 'org.springframework.orm.jpa.SharedEntityManagerCreator#0'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'dictionaryService' via constructor to bean named 'wordRepositoryImpl'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'wordMapper'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'dictionaryController' via constructor to bean named 'dictionaryService'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'dictionaryController' via constructor to bean named 'wordMapper'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'wordController'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'wordService'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'wordService' via constructor to bean named 'wordRepositoryImpl'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'wordController' via constructor to bean named 'wordMapper'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'wordController' via constructor to bean named 'wordService'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'serviceModelToSwagger2MapperImpl'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'modelMapperImpl'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterMapperImpl'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'securityMapperImpl'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'licenseMapperImpl'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'vendorExtensionsMapperImpl'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiListingReferenceScanner'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiDocumentationScanner'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiListingScanner'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiDescriptionReader'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'cachingOperationReader'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiOperationReader'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'documentationPluginsManager'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'documentationPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiListingBuilderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterBuilderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'expandedParameterBuilderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationBuilderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'resourceGroupingStrategyRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationModelsProviderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaultsProviderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'pathDecoratorRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiListingScannerPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'cachingOperationNameGenerator'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiOperationReader' via constructor to bean named 'documentationPluginsManager'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiOperationReader' via constructor to bean named 'cachingOperationNameGenerator'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'cachingOperationReader' via constructor to bean named 'apiOperationReader'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiDescriptionLookup'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiDescriptionReader' via constructor to bean named 'cachingOperationReader'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiDescriptionReader' via constructor to bean named 'documentationPluginsManager'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiDescriptionReader' via constructor to bean named 'apiDescriptionLookup'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiModelReader'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'cachingModelProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaultModelProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'typeResolver'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'springfox.documentation.schema.configuration.ModelsConfiguration'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'cachingModelPropertiesProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'optimized'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'accessorsProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'accessorsProvider' via constructor to bean named 'typeResolver'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'fieldProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'fieldProvider' via constructor to bean named 'typeResolver'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'factoryMethodProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'factoryMethodProvider' via constructor to bean named 'typeResolver'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'objectMapperBeanPropertyNamingStrategy'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'schemaPluginsManager'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'modelPropertyBuilderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'modelBuilderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'syntheticModelProviderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'schemaPluginsManager' via constructor to bean named 'modelPropertyBuilderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'schemaPluginsManager' via constructor to bean named 'modelBuilderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'schemaPluginsManager' via constructor to bean named 'syntheticModelProviderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'typeNameExtractor'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'typeNameProviderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'jacksonEnumTypeDeterminer'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'typeNameExtractor' via constructor to bean named 'typeResolver'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'typeNameExtractor' via constructor to bean named 'typeNameProviderPluginRegistry'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'typeNameExtractor' via constructor to bean named 'jacksonEnumTypeDeterminer'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'accessorsProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'fieldProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'factoryMethodProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'typeResolver'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'objectMapperBeanPropertyNamingStrategy'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'schemaPluginsManager'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'typeNameExtractor'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'cachingModelPropertiesProvider' via constructor to bean named 'typeResolver'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'cachingModelPropertiesProvider' via constructor to bean named 'optimized'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'cachingModelDependencyProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaultModelDependencyProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelDependencyProvider' via constructor to bean named 'typeResolver'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelDependencyProvider' via constructor to bean named 'cachingModelPropertiesProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelDependencyProvider' via constructor to bean named 'typeNameExtractor'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelDependencyProvider' via constructor to bean named 'jacksonEnumTypeDeterminer'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelDependencyProvider' via constructor to bean named 'schemaPluginsManager'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'cachingModelDependencyProvider' via constructor to bean named 'defaultModelDependencyProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'typeResolver'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'cachingModelPropertiesProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'cachingModelDependencyProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'schemaPluginsManager'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'typeNameExtractor'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'jacksonEnumTypeDeterminer'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'cachingModelProvider' via constructor to bean named 'defaultModelProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiModelReader' via constructor to bean named 'cachingModelProvider'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiModelReader' via constructor to bean named 'typeResolver'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiModelReader' via constructor to bean named 'documentationPluginsManager'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiListingScanner' via constructor to bean named 'apiDescriptionReader'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiListingScanner' via constructor to bean named 'apiModelReader'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiListingScanner' via constructor to bean named 'documentationPluginsManager'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiDocumentationScanner' via constructor to bean named 'apiListingReferenceScanner'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiDocumentationScanner' via constructor to bean named 'apiListingScanner'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiListingReader'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mediaTypeReader'
-[16:42:14] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationModelsProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationModelsProvider' via constructor to bean named 'typeResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationDeprecatedReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'responseMessagesReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'responseMessagesReader' via constructor to bean named 'typeNameExtractor'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationParameterReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'modelAttributeParameterExpander'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'modelAttributeParameterExpander' via constructor to bean named 'fieldProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'modelAttributeParameterExpander' via constructor to bean named 'accessorsProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'modelAttributeParameterExpander' via constructor to bean named 'jacksonEnumTypeDeterminer'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationParameterReader' via constructor to bean named 'modelAttributeParameterExpander'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationParameterReader' via constructor to bean named 'jacksonEnumTypeDeterminer'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaultTagsProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationTagsReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationTagsReader' via constructor to bean named 'defaultTagsProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaultOperationReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationParameterRequestConditionReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationParameterRequestConditionReader' via constructor to bean named 'typeResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationParameterHeadersConditionReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationParameterHeadersConditionReader' via constructor to bean named 'typeResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationResponseClassReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationResponseClassReader' via constructor to bean named 'typeNameExtractor'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterMultiplesReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterTypeReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterRequiredReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'descriptionResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'springfox.documentation.spring.web.SpringfoxWebMvcConfiguration'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'descriptionResolver' via factory method to bean named 'environment'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'parameterRequiredReader' via constructor to bean named 'descriptionResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterDataTypeReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'parameterDataTypeReader' via constructor to bean named 'typeNameExtractor'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'parameterDataTypeReader' via constructor to bean named 'typeResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'parameterDataTypeReader' via constructor to bean named 'jacksonEnumTypeDeterminer'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterDefaultReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'parameterDefaultReader' via constructor to bean named 'descriptionResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterNameReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'expandedParameterBuilder'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'expandedParameterBuilder' via constructor to bean named 'typeResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'expandedParameterBuilder' via constructor to bean named 'jacksonEnumTypeDeterminer'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'documentationPluginsBootstrapper'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'webMvcRequestHandlerProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'methodResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'methodResolver' via factory method to bean named 'typeResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'requestMappingHandlerMapping'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcContentNegotiationManager'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcConversionService'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcResourceUrlProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
-[16:42:15] [main/DEBUG]: [Mappings] 
+[21:20:11] [main/INFO]: [ContextLoader] Root WebApplicationContext: initialization started
+[21:20:11] [main/DEBUG]: [AnnotationConfigWebApplicationContext] Refreshing Root WebApplicationContext
+[21:20:11] [main/DEBUG]: [AnnotationConfigWebApplicationContext] Registering component classes: [class ru.regiuss.practice.dictinoary.server.SpringWebInitializer]
+[21:20:11] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\configuration\AppConfig.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\configuration\JpaConfig.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\configuration\SwaggerConfig.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\controller\ExceptionHandler.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\controller\MainController.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\controller\api\v1\DictionaryController.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\controller\api\v1\WordController.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\mapper\WordMapper.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Ignored because not a concrete top-level class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\repository\WordRepository.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\repository\WordRepositoryImpl.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\service\DictionaryService.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: file [C:\projects\Java\DictinoarySpringNoBootApp\target\classes\ru\regiuss\practice\dictinoary\server\service\WordService.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ServiceModelToSwagger2MapperImpl.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/VendorExtensionsMapperImpl.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ParameterMapperImpl.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ModelMapperImpl.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/LicenseMapperImpl.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/SecurityMapperImpl.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingReferenceScanner.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDocumentationScanner.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/CachingOperationReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/MediaTypeReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingScanner.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiModelReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionLookup.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationModelsProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationDeprecatedReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/ResponseMessagesReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/DefaultTagsProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationTagsReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/ApiOperationReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/DefaultOperationReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterRequestConditionReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterHeadersConditionReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationResponseClassReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/CachingOperationNameGenerator.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterMultiplesReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ModelAttributeParameterExpander.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterTypeReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterRequiredReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterDataTypeReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterDefaultReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterNameReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ExpandedParameterBuilder.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsManager.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/QueryStringUriTemplateDecorator.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/PathMappingDecorator.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/PathSanitizer.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/OperationPathDecorator.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/CachingModelDependencyProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/TypeNameExtractor.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/PropertyDiscriminatorBasedInheritancePlugin.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/XmlModelPlugin.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/SchemaPluginsManager.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/CachingModelPropertiesProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/ObjectMapperBeanPropertyNamingStrategy.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/bean/AccessorsProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/field/FieldProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/XmlPropertyPlugin.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/OptimizedModelPropertiesProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/FactoryMethodProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/CachingModelProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/DefaultModelDependencyProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/JacksonEnumTypeDeterminer.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/DefaultModelProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelPropertyPropertyBuilder.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelTypeNameProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelBuilder.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationImplicitParameterReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/VendorExtensionsReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationResponseClassReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationModelsProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerMediaTypeReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationHttpMethodReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationImplicitParametersReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationAuthReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationHiddenReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationSummaryReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerResponseMessageReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationNicknameIntoUniqueIdReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationPositionReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationNotesReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationTagsReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/parameter/ApiParamParameterBuilder.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/parameter/SwaggerExpandedParameterBuilder.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/SwaggerApiListingReader.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/ClassOrApiAnnotationResourceGrouping.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/InMemorySwaggerResourcesProvider.class]
+[21:20:12] [main/DEBUG]: [ClassPathBeanDefinitionScanner] Identified candidate component class: URL [jar:file:/C:/Users/root/.m2/repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/ApiResourceController.class]
+[21:20:12] [main/INFO]: [RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[21:20:12] [main/DEBUG]: [RepositoryConfigurationDelegate] Scanning for JPA repositories in packages ru.regiuss.practice.dictinoary.server.repository.
+[21:20:12] [main/INFO]: [RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'emBeanDefinitionRegistrarPostProcessor'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'objectMapperConfigurer'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'transactionAttributeSource'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'transactionInterceptor'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
+[21:20:13] [main/DEBUG]: [UiApplicationContextUtils] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@651699e7]
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'springWebInitializer'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'appConfig'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'jpaConfig'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerConfig'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'exceptionHandler'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mainController'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'dictionaryController'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'dictionaryService'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'wordRepositoryImpl'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.orm.jpa.SharedEntityManagerCreator#0'
+[21:20:13] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'entityManagerFactory'
+[21:20:13] [main/DEBUG]: [LocalEntityManagerFactoryBean] Building JPA EntityManagerFactory for persistence unit 'mysql'
+[21:20:13] [main/DEBUG]: [logging] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+[21:20:15] [main/WARN]: [pooling] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[21:20:17] [main/INFO]: [LocalEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'mysql'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'wordRepositoryImpl' via constructor to bean named 'org.springframework.orm.jpa.SharedEntityManagerCreator#0'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'dictionaryService' via constructor to bean named 'wordRepositoryImpl'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'wordMapper'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'dictionaryController' via constructor to bean named 'dictionaryService'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'dictionaryController' via constructor to bean named 'wordMapper'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'wordController'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'wordService'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'wordService' via constructor to bean named 'wordRepositoryImpl'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'wordController' via constructor to bean named 'wordMapper'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'wordController' via constructor to bean named 'wordService'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'serviceModelToSwagger2MapperImpl'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'modelMapperImpl'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterMapperImpl'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'securityMapperImpl'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'licenseMapperImpl'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'vendorExtensionsMapperImpl'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiListingReferenceScanner'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiDocumentationScanner'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiListingScanner'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiDescriptionReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'cachingOperationReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiOperationReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'documentationPluginsManager'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'documentationPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiListingBuilderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterBuilderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'expandedParameterBuilderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationBuilderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'resourceGroupingStrategyRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationModelsProviderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaultsProviderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'pathDecoratorRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiListingScannerPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'cachingOperationNameGenerator'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiOperationReader' via constructor to bean named 'documentationPluginsManager'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiOperationReader' via constructor to bean named 'cachingOperationNameGenerator'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'cachingOperationReader' via constructor to bean named 'apiOperationReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiDescriptionLookup'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiDescriptionReader' via constructor to bean named 'cachingOperationReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiDescriptionReader' via constructor to bean named 'documentationPluginsManager'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiDescriptionReader' via constructor to bean named 'apiDescriptionLookup'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiModelReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'cachingModelProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaultModelProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'springfox.documentation.schema.configuration.ModelsConfiguration'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'cachingModelPropertiesProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'optimized'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'accessorsProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'accessorsProvider' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'fieldProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'fieldProvider' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'factoryMethodProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'factoryMethodProvider' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'objectMapperBeanPropertyNamingStrategy'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'schemaPluginsManager'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'modelPropertyBuilderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'modelBuilderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'syntheticModelProviderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'schemaPluginsManager' via constructor to bean named 'modelPropertyBuilderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'schemaPluginsManager' via constructor to bean named 'modelBuilderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'schemaPluginsManager' via constructor to bean named 'syntheticModelProviderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'typeNameExtractor'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'typeNameProviderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'jacksonEnumTypeDeterminer'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'typeNameExtractor' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'typeNameExtractor' via constructor to bean named 'typeNameProviderPluginRegistry'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'typeNameExtractor' via constructor to bean named 'jacksonEnumTypeDeterminer'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'accessorsProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'fieldProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'factoryMethodProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'objectMapperBeanPropertyNamingStrategy'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'schemaPluginsManager'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'optimized' via constructor to bean named 'typeNameExtractor'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'cachingModelPropertiesProvider' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'cachingModelPropertiesProvider' via constructor to bean named 'optimized'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'cachingModelDependencyProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaultModelDependencyProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelDependencyProvider' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelDependencyProvider' via constructor to bean named 'cachingModelPropertiesProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelDependencyProvider' via constructor to bean named 'typeNameExtractor'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelDependencyProvider' via constructor to bean named 'jacksonEnumTypeDeterminer'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelDependencyProvider' via constructor to bean named 'schemaPluginsManager'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'cachingModelDependencyProvider' via constructor to bean named 'defaultModelDependencyProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'cachingModelPropertiesProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'cachingModelDependencyProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'schemaPluginsManager'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'typeNameExtractor'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'jacksonEnumTypeDeterminer'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'cachingModelProvider' via constructor to bean named 'defaultModelProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiModelReader' via constructor to bean named 'cachingModelProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiModelReader' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiModelReader' via constructor to bean named 'documentationPluginsManager'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiListingScanner' via constructor to bean named 'apiDescriptionReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiListingScanner' via constructor to bean named 'apiModelReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiListingScanner' via constructor to bean named 'documentationPluginsManager'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiDocumentationScanner' via constructor to bean named 'apiListingReferenceScanner'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiDocumentationScanner' via constructor to bean named 'apiListingScanner'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiListingReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mediaTypeReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationModelsProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationModelsProvider' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationDeprecatedReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'responseMessagesReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'responseMessagesReader' via constructor to bean named 'typeNameExtractor'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationParameterReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'modelAttributeParameterExpander'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'modelAttributeParameterExpander' via constructor to bean named 'fieldProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'modelAttributeParameterExpander' via constructor to bean named 'accessorsProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'modelAttributeParameterExpander' via constructor to bean named 'jacksonEnumTypeDeterminer'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationParameterReader' via constructor to bean named 'modelAttributeParameterExpander'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationParameterReader' via constructor to bean named 'jacksonEnumTypeDeterminer'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaultTagsProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationTagsReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationTagsReader' via constructor to bean named 'defaultTagsProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaultOperationReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationParameterRequestConditionReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationParameterRequestConditionReader' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationParameterHeadersConditionReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationParameterHeadersConditionReader' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationResponseClassReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationResponseClassReader' via constructor to bean named 'typeNameExtractor'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterMultiplesReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterTypeReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterRequiredReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'descriptionResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'springfox.documentation.spring.web.SpringfoxWebMvcConfiguration'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'descriptionResolver' via factory method to bean named 'environment'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'parameterRequiredReader' via constructor to bean named 'descriptionResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterDataTypeReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'parameterDataTypeReader' via constructor to bean named 'typeNameExtractor'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'parameterDataTypeReader' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'parameterDataTypeReader' via constructor to bean named 'jacksonEnumTypeDeterminer'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterDefaultReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'parameterDefaultReader' via constructor to bean named 'descriptionResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'parameterNameReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'expandedParameterBuilder'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'expandedParameterBuilder' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'expandedParameterBuilder' via constructor to bean named 'jacksonEnumTypeDeterminer'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'documentationPluginsBootstrapper'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'webMvcRequestHandlerProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'methodResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'methodResolver' via factory method to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcConversionService'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[21:20:17] [main/DEBUG]: [Mappings] 
 	r.r.p.d.s.c.MainController:
-	{GET [/*]}: home()
-[16:42:15] [main/DEBUG]: [Mappings] 
+	{GET [/ || ]}: home()
+[21:20:17] [main/DEBUG]: [Mappings] 
 	r.r.p.d.s.c.a.v.DictionaryController:
 	{POST [/api/v1/dictionary/{dictionaryID}]}: add(int,WordDTO)
-	{GET [/api/v1/dictionary]}: getDictionaries()
 	{GET [/api/v1/dictionary/{dictionaryID}]}: getWords(int,DictionaryFilter)
-[16:42:15] [main/DEBUG]: [Mappings] 
+	{GET [/api/v1/dictionary]}: getDictionaries()
+[21:20:17] [main/DEBUG]: [Mappings] 
 	r.r.p.d.s.c.a.v.WordController:
 	{GET [/api/v1/word/{wordID}]}: get(int)
 	{DELETE [/api/v1/word/{wordID}]}: delete(int)
 	{PUT [/api/v1/word/{wordID}]}: edit(int,WordDTO)
-[16:42:15] [main/DEBUG]: [Mappings] 
+[21:20:17] [main/DEBUG]: [Mappings] 
 	s.d.s.w.ApiResourceController:
 	{ [/swagger-resources/configuration/security]}: securityConfiguration()
-	{ [/swagger-resources]}: swaggerResources()
 	{ [/swagger-resources/configuration/ui]}: uiConfiguration()
-[16:42:15] [main/DEBUG]: [RequestMappingHandlerMapping] 10 mappings in 'requestMappingHandlerMapping'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'webMvcRequestHandlerProvider' via constructor to bean named 'methodResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'webMvcRequestHandlerProvider' via constructor to bean named 'requestMappingHandlerMapping'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'resourceGroupCache'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaults'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'documentationPluginsManager'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'webMvcRequestHandlerProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'resourceGroupCache'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'apiDocumentationScanner'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'typeResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'defaults'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'servletContext'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'environment'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'queryStringUriTemplateDecorator'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'pathMappingDecorator'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'pathSanitizer'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationPathDecorator'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'propertyDiscriminatorBasedInheritancePlugin'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'propertyDiscriminatorBasedInheritancePlugin' via constructor to bean named 'typeResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'propertyDiscriminatorBasedInheritancePlugin' via constructor to bean named 'typeNameExtractor'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'xmlModelPlugin'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'xmlModelPlugin' via constructor to bean named 'typeResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'xmlPropertyPlugin'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiModelPropertyPropertyBuilder'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiModelPropertyPropertyBuilder' via constructor to bean named 'descriptionResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiModelTypeNameProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiModelBuilder'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiModelBuilder' via constructor to bean named 'typeResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiModelBuilder' via constructor to bean named 'typeNameExtractor'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationImplicitParameterReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationImplicitParameterReader' via constructor to bean named 'descriptionResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'vendorExtensionsReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerOperationResponseClassReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerOperationResponseClassReader' via constructor to bean named 'typeResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerOperationResponseClassReader' via constructor to bean named 'typeNameExtractor'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerOperationModelsProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerOperationModelsProvider' via constructor to bean named 'typeResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerMediaTypeReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationHttpMethodReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationImplicitParametersReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationImplicitParametersReader' via constructor to bean named 'descriptionResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationAuthReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationHiddenReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationSummaryReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationSummaryReader' via constructor to bean named 'descriptionResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerResponseMessageReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerResponseMessageReader' via constructor to bean named 'typeNameExtractor'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerResponseMessageReader' via constructor to bean named 'typeResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationNicknameIntoUniqueIdReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationPositionReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationNotesReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationNotesReader' via constructor to bean named 'descriptionResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerOperationTagsReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerOperationTagsReader' via constructor to bean named 'defaultTagsProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerParameterDescriptionReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerParameterDescriptionReader' via constructor to bean named 'descriptionResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerParameterDescriptionReader' via constructor to bean named 'jacksonEnumTypeDeterminer'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerExpandedParameterBuilder'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerExpandedParameterBuilder' via constructor to bean named 'descriptionResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerExpandedParameterBuilder' via constructor to bean named 'jacksonEnumTypeDeterminer'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerApiListingReader'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'classOrApiAnnotationResourceGrouping'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'inMemorySwaggerResourcesProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'inMemorySwaggerResourcesProvider' via constructor to bean named 'environment'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'inMemorySwaggerResourcesProvider' via constructor to bean named 'resourceGroupCache'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiResourceController'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiResourceController' via constructor to bean named 'inMemorySwaggerResourcesProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'internalResourceViewResolver'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'transactionManager'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'transactionManager' via factory method to bean named 'entityManagerFactory'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.data.jpa.util.JpaMetamodelCacheCleanup'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.data.jpa.repository.support.JpaEvaluationContextExtension'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'jsonSerializer'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swagger2Module'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'springfox.documentation.swagger2.configuration.Swagger2DocumentationConfiguration'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'jsonSerializer' via factory method to bean named 'swagger2Module'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'springfox.documentation.swagger.configuration.SwaggerCommonConfiguration'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swagger2ControllerMapping'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swagger2ControllerMapping' via factory method to bean named 'environment'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swagger2ControllerMapping' via factory method to bean named 'resourceGroupCache'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swagger2ControllerMapping' via factory method to bean named 'serviceModelToSwagger2MapperImpl'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swagger2ControllerMapping' via factory method to bean named 'jsonSerializer'
-[16:42:15] [main/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] initialising the handler methods
-[16:42:15] [main/INFO]: [PropertySourcedRequestMappingHandlerMapping] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'api'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcPatternParser'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcUrlPathHelper'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcPathMatcher'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'viewControllerHandlerMapping'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'beanNameHandlerMapping'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
-[16:42:15] [main/DEBUG]: [Mappings] 'beanNameHandlerMapping' {}
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'routerFunctionMapping'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'resourceHandlerMapping'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
-[16:42:15] [main/DEBUG]: [Mappings] 'resourceHandlerMapping' {/swagger-ui.html=ResourceHttpRequestHandler [classpath [META-INF/resources/]], /webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /static/**=ResourceHttpRequestHandler [URL [file:static/]]}
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaultServletHandlerMapping'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcValidator'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
-[16:42:15] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
-[16:42:16] [main/DEBUG]: [RequestMappingHandlerAdapter] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'handlerFunctionAdapter'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcUriComponentsContributor'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'requestMappingHandlerAdapter'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'handlerExceptionResolver'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'handlerExceptionResolver' via factory method to bean named 'mvcContentNegotiationManager'
-[16:42:16] [main/DEBUG]: [ExceptionHandlerExceptionResolver] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcViewResolver'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'localeResolver'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'themeResolver'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'flashMapManager'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'viewNameTranslator'
-[16:42:16] [main/DEBUG]: [DefaultLifecycleProcessor] Starting beans in phase 2147483647
-[16:42:16] [main/DEBUG]: [DefaultLifecycleProcessor] Successfully started bean 'documentationPluginsBootstrapper'
-[16:42:16] [main/INFO]: [ContextLoader] Root WebApplicationContext initialized in 7737 ms
-[16:42:16] [main/INFO]: [DispatcherServlet] Initializing Servlet 'dispatcher'
-[16:42:16] [main/DEBUG]: [AnnotationConfigWebApplicationContext] Refreshing WebApplicationContext for namespace 'dispatcher-servlet'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-[16:42:16] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-[16:42:16] [main/DEBUG]: [UiApplicationContextUtils] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@4fc4f01c]
-[16:42:16] [main/DEBUG]: [DispatcherServlet] Detected AcceptHeaderLocaleResolver
-[16:42:16] [main/DEBUG]: [DispatcherServlet] Detected FixedThemeResolver
-[16:42:16] [main/DEBUG]: [DispatcherServlet] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@49a248bc
-[16:42:16] [main/DEBUG]: [DispatcherServlet] Detected org.springframework.web.servlet.support.SessionFlashMapManager@4efe594a
-[16:42:16] [main/DEBUG]: [DispatcherServlet] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-[16:42:16] [main/INFO]: [DispatcherServlet] Completed initialization in 0 ms
-[16:42:22] [http-nio-7019-exec-1/DEBUG]: [DispatcherServlet] GET "/", parameters={}
-[16:42:22] [http-nio-7019-exec-1/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /
-[16:42:22] [http-nio-7019-exec-1/DEBUG]: [RequestMappingHandlerMapping] Mapped to ru.regiuss.practice.dictinoary.server.controller.MainController#home()
-[16:42:22] [http-nio-7019-exec-1/DEBUG]: [JstlView] View name 'index', model {}
-[16:42:22] [http-nio-7019-exec-1/DEBUG]: [JstlView] Forwarding to [static/index.html]
-[16:42:22] [http-nio-7019-exec-1/DEBUG]: [DispatcherServlet] "FORWARD" dispatch for GET "/static/index.html", parameters={}
-[16:42:22] [http-nio-7019-exec-1/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /static/index.html
-[16:42:22] [http-nio-7019-exec-1/DEBUG]: [SimpleUrlHandlerMapping] Mapped to ResourceHttpRequestHandler [URL [file:static/]]
-[16:42:22] [http-nio-7019-exec-1/DEBUG]: [DispatcherServlet] Exiting from "FORWARD" dispatch, status 200
-[16:42:22] [http-nio-7019-exec-1/DEBUG]: [DispatcherServlet] Completed 200 OK
-[16:42:22] [http-nio-7019-exec-2/DEBUG]: [DispatcherServlet] GET "/static/js/main.946f22c5.js", parameters={}
-[16:42:22] [http-nio-7019-exec-3/DEBUG]: [DispatcherServlet] GET "/static/css/main.32910559.css", parameters={}
-[16:42:22] [http-nio-7019-exec-2/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /static/js/main.946f22c5.js
-[16:42:22] [http-nio-7019-exec-2/DEBUG]: [SimpleUrlHandlerMapping] Mapped to ResourceHttpRequestHandler [URL [file:static/]]
-[16:42:22] [http-nio-7019-exec-3/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /static/css/main.32910559.css
-[16:42:22] [http-nio-7019-exec-3/DEBUG]: [SimpleUrlHandlerMapping] Mapped to ResourceHttpRequestHandler [URL [file:static/]]
-[16:42:22] [http-nio-7019-exec-2/DEBUG]: [DispatcherServlet] Completed 200 OK
-[16:42:22] [http-nio-7019-exec-3/DEBUG]: [DispatcherServlet] Completed 200 OK
-[16:42:23] [http-nio-7019-exec-4/DEBUG]: [DispatcherServlet] GET "/static/css/main.32910559.css.map", parameters={}
-[16:42:23] [http-nio-7019-exec-4/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /static/css/main.32910559.css.map
-[16:42:23] [http-nio-7019-exec-4/DEBUG]: [SimpleUrlHandlerMapping] Mapped to ResourceHttpRequestHandler [URL [file:static/]]
-[16:42:23] [http-nio-7019-exec-5/DEBUG]: [DispatcherServlet] GET "/static/js/main.946f22c5.js.map", parameters={}
-[16:42:23] [http-nio-7019-exec-5/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /static/js/main.946f22c5.js.map
-[16:42:23] [http-nio-7019-exec-5/DEBUG]: [SimpleUrlHandlerMapping] Mapped to ResourceHttpRequestHandler [URL [file:static/]]
-[16:42:23] [http-nio-7019-exec-4/DEBUG]: [DispatcherServlet] Completed 200 OK
-[16:42:23] [http-nio-7019-exec-5/DEBUG]: [DispatcherServlet] Completed 200 OK
-[16:42:23] [http-nio-7019-exec-6/DEBUG]: [DispatcherServlet] GET "/static/favicon.ico", parameters={}
-[16:42:23] [http-nio-7019-exec-6/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /static/favicon.ico
-[16:42:23] [http-nio-7019-exec-6/DEBUG]: [SimpleUrlHandlerMapping] Mapped to ResourceHttpRequestHandler [URL [file:static/]]
-[16:42:23] [http-nio-7019-exec-7/DEBUG]: [DispatcherServlet] GET "/static/manifest.json", parameters={}
-[16:42:23] [http-nio-7019-exec-7/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /static/manifest.json
-[16:42:23] [http-nio-7019-exec-7/DEBUG]: [SimpleUrlHandlerMapping] Mapped to ResourceHttpRequestHandler [URL [file:static/]]
-[16:42:23] [http-nio-7019-exec-6/DEBUG]: [DispatcherServlet] Completed 200 OK
-[16:42:23] [http-nio-7019-exec-7/DEBUG]: [DispatcherServlet] Completed 200 OK
-[16:42:27] [http-nio-7019-exec-9/DEBUG]: [DispatcherServlet] GET "/swagger-ui.html", parameters={}
-[16:42:27] [http-nio-7019-exec-9/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /swagger-ui.html
-[16:42:27] [http-nio-7019-exec-9/DEBUG]: [RequestMappingHandlerMapping] Mapped to ru.regiuss.practice.dictinoary.server.controller.MainController#home()
-[16:42:27] [http-nio-7019-exec-9/DEBUG]: [JstlView] View name 'index', model {}
-[16:42:27] [http-nio-7019-exec-9/DEBUG]: [JstlView] Forwarding to [static/index.html]
-[16:42:27] [http-nio-7019-exec-9/DEBUG]: [DispatcherServlet] "FORWARD" dispatch for GET "/static/index.html", parameters={}
-[16:42:27] [http-nio-7019-exec-9/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /static/index.html
-[16:42:27] [http-nio-7019-exec-9/DEBUG]: [SimpleUrlHandlerMapping] Mapped to ResourceHttpRequestHandler [URL [file:static/]]
-[16:42:27] [http-nio-7019-exec-9/DEBUG]: [DispatcherServlet] Exiting from "FORWARD" dispatch, status 200
-[16:42:27] [http-nio-7019-exec-9/DEBUG]: [DispatcherServlet] Completed 200 OK
-[16:42:28] [http-nio-7019-exec-10/DEBUG]: [DispatcherServlet] GET "/static/js/main.946f22c5.js", parameters={}
-[16:42:28] [http-nio-7019-exec-10/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /static/js/main.946f22c5.js
-[16:42:28] [http-nio-7019-exec-8/DEBUG]: [DispatcherServlet] GET "/static/css/main.32910559.css", parameters={}
-[16:42:28] [http-nio-7019-exec-8/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /static/css/main.32910559.css
-[16:42:28] [http-nio-7019-exec-10/DEBUG]: [SimpleUrlHandlerMapping] Mapped to ResourceHttpRequestHandler [URL [file:static/]]
-[16:42:28] [http-nio-7019-exec-8/DEBUG]: [SimpleUrlHandlerMapping] Mapped to ResourceHttpRequestHandler [URL [file:static/]]
-[16:42:28] [http-nio-7019-exec-10/DEBUG]: [DispatcherServlet] Completed 200 OK
-[16:42:28] [http-nio-7019-exec-8/DEBUG]: [DispatcherServlet] Completed 200 OK
-[16:42:28] [http-nio-7019-exec-1/DEBUG]: [DispatcherServlet] GET "/static/css/main.32910559.css.map", parameters={}
-[16:42:28] [http-nio-7019-exec-1/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /static/css/main.32910559.css.map
-[16:42:28] [http-nio-7019-exec-1/DEBUG]: [SimpleUrlHandlerMapping] Mapped to ResourceHttpRequestHandler [URL [file:static/]]
-[16:42:28] [http-nio-7019-exec-1/DEBUG]: [DispatcherServlet] Completed 200 OK
-[16:42:28] [http-nio-7019-exec-3/DEBUG]: [DispatcherServlet] GET "/static/js/main.946f22c5.js.map", parameters={}
-[16:42:28] [http-nio-7019-exec-3/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /static/js/main.946f22c5.js.map
-[16:42:28] [http-nio-7019-exec-3/DEBUG]: [SimpleUrlHandlerMapping] Mapped to ResourceHttpRequestHandler [URL [file:static/]]
-[16:42:28] [http-nio-7019-exec-3/DEBUG]: [DispatcherServlet] Completed 200 OK
-[16:42:28] [http-nio-7019-exec-2/DEBUG]: [DispatcherServlet] GET "/static/manifest.json", parameters={}
-[16:42:28] [http-nio-7019-exec-2/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /static/manifest.json
-[16:42:28] [http-nio-7019-exec-2/DEBUG]: [SimpleUrlHandlerMapping] Mapped to ResourceHttpRequestHandler [URL [file:static/]]
-[16:42:28] [http-nio-7019-exec-2/DEBUG]: [DispatcherServlet] Completed 200 OK
+	{ [/swagger-resources]}: swaggerResources()
+[21:20:17] [main/DEBUG]: [RequestMappingHandlerMapping] 10 mappings in 'requestMappingHandlerMapping'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'webMvcRequestHandlerProvider' via constructor to bean named 'methodResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'webMvcRequestHandlerProvider' via constructor to bean named 'requestMappingHandlerMapping'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'resourceGroupCache'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaults'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'documentationPluginsManager'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'webMvcRequestHandlerProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'resourceGroupCache'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'apiDocumentationScanner'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'defaults'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'servletContext'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'environment'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'queryStringUriTemplateDecorator'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'pathMappingDecorator'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'pathSanitizer'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationPathDecorator'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'propertyDiscriminatorBasedInheritancePlugin'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'propertyDiscriminatorBasedInheritancePlugin' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'propertyDiscriminatorBasedInheritancePlugin' via constructor to bean named 'typeNameExtractor'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'xmlModelPlugin'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'xmlModelPlugin' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'xmlPropertyPlugin'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiModelPropertyPropertyBuilder'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiModelPropertyPropertyBuilder' via constructor to bean named 'descriptionResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiModelTypeNameProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiModelBuilder'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiModelBuilder' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiModelBuilder' via constructor to bean named 'typeNameExtractor'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationImplicitParameterReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationImplicitParameterReader' via constructor to bean named 'descriptionResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'vendorExtensionsReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerOperationResponseClassReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerOperationResponseClassReader' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerOperationResponseClassReader' via constructor to bean named 'typeNameExtractor'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerOperationModelsProvider'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerOperationModelsProvider' via constructor to bean named 'typeResolver'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerMediaTypeReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationHttpMethodReader'
+[21:20:17] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationImplicitParametersReader'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationImplicitParametersReader' via constructor to bean named 'descriptionResolver'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationAuthReader'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationHiddenReader'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationSummaryReader'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationSummaryReader' via constructor to bean named 'descriptionResolver'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerResponseMessageReader'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerResponseMessageReader' via constructor to bean named 'typeNameExtractor'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerResponseMessageReader' via constructor to bean named 'typeResolver'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationNicknameIntoUniqueIdReader'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationPositionReader'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'operationNotesReader'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'operationNotesReader' via constructor to bean named 'descriptionResolver'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerOperationTagsReader'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerOperationTagsReader' via constructor to bean named 'defaultTagsProvider'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerParameterDescriptionReader'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerParameterDescriptionReader' via constructor to bean named 'descriptionResolver'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerParameterDescriptionReader' via constructor to bean named 'jacksonEnumTypeDeterminer'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerExpandedParameterBuilder'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerExpandedParameterBuilder' via constructor to bean named 'descriptionResolver'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swaggerExpandedParameterBuilder' via constructor to bean named 'jacksonEnumTypeDeterminer'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swaggerApiListingReader'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'classOrApiAnnotationResourceGrouping'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'inMemorySwaggerResourcesProvider'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'inMemorySwaggerResourcesProvider' via constructor to bean named 'environment'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'inMemorySwaggerResourcesProvider' via constructor to bean named 'resourceGroupCache'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'apiResourceController'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'apiResourceController' via constructor to bean named 'inMemorySwaggerResourcesProvider'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'internalResourceViewResolver'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'transactionManager'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'transactionManager' via factory method to bean named 'entityManagerFactory'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.data.jpa.util.JpaMetamodelCacheCleanup'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.data.jpa.repository.support.JpaEvaluationContextExtension'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'jsonSerializer'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swagger2Module'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'springfox.documentation.swagger2.configuration.Swagger2DocumentationConfiguration'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'jsonSerializer' via factory method to bean named 'swagger2Module'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'springfox.documentation.swagger.configuration.SwaggerCommonConfiguration'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'swagger2ControllerMapping'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swagger2ControllerMapping' via factory method to bean named 'environment'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swagger2ControllerMapping' via factory method to bean named 'resourceGroupCache'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swagger2ControllerMapping' via factory method to bean named 'serviceModelToSwagger2MapperImpl'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'swagger2ControllerMapping' via factory method to bean named 'jsonSerializer'
+[21:20:18] [main/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] initialising the handler methods
+[21:20:18] [main/INFO]: [PropertySourcedRequestMappingHandlerMapping] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'api'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcPatternParser'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcUrlPathHelper'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcPathMatcher'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'beanNameHandlerMapping'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[21:20:18] [main/DEBUG]: [Mappings] 'beanNameHandlerMapping' {}
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'routerFunctionMapping'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'resourceHandlerMapping'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[21:20:18] [main/DEBUG]: [Mappings] 'resourceHandlerMapping' {/swagger-ui.html=ResourceHttpRequestHandler [classpath [META-INF/resources/]], /webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /static/**=ResourceHttpRequestHandler [URL [file:static/]]}
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcValidator'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+[21:20:18] [main/DEBUG]: [RequestMappingHandlerAdapter] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'handlerFunctionAdapter'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'requestMappingHandlerAdapter'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'handlerExceptionResolver'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'handlerExceptionResolver' via factory method to bean named 'mvcContentNegotiationManager'
+[21:20:18] [main/DEBUG]: [ExceptionHandlerExceptionResolver] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'mvcViewResolver'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Autowiring by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'localeResolver'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'themeResolver'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'flashMapManager'
+[21:20:18] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'viewNameTranslator'
+[21:20:18] [main/DEBUG]: [DefaultLifecycleProcessor] Starting beans in phase 2147483647
+[21:20:19] [main/DEBUG]: [DefaultLifecycleProcessor] Successfully started bean 'documentationPluginsBootstrapper'
+[21:20:19] [main/INFO]: [ContextLoader] Root WebApplicationContext initialized in 7701 ms
+[21:20:19] [main/INFO]: [DispatcherServlet] Initializing Servlet 'dispatcher'
+[21:20:19] [main/DEBUG]: [AnnotationConfigWebApplicationContext] Refreshing WebApplicationContext for namespace 'dispatcher-servlet'
+[21:20:19] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[21:20:19] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+[21:20:19] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+[21:20:19] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[21:20:19] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[21:20:19] [main/DEBUG]: [DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+[21:20:19] [main/DEBUG]: [UiApplicationContextUtils] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@556e9fb9]
+[21:20:19] [main/DEBUG]: [DispatcherServlet] Detected AcceptHeaderLocaleResolver
+[21:20:19] [main/DEBUG]: [DispatcherServlet] Detected FixedThemeResolver
+[21:20:19] [main/DEBUG]: [DispatcherServlet] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3821b16a
+[21:20:19] [main/DEBUG]: [DispatcherServlet] Detected org.springframework.web.servlet.support.SessionFlashMapManager@1c4ef349
+[21:20:19] [main/DEBUG]: [DispatcherServlet] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[21:20:19] [main/INFO]: [DispatcherServlet] Completed initialization in 8 ms
+[21:20:23] [http-nio-7019-exec-1/DEBUG]: [DispatcherServlet] GET "/api/v1/dictionary/1?search=34", parameters={masked}
+[21:20:23] [http-nio-7019-exec-1/DEBUG]: [PropertySourcedRequestMappingHandlerMapping] looking up handler for path: /api/v1/dictionary/1
+[21:20:23] [http-nio-7019-exec-1/DEBUG]: [RequestMappingHandlerMapping] Mapped to ru.regiuss.practice.dictinoary.server.controller.api.v1.DictionaryController#getWords(int, DictionaryFilter)
+[21:20:23] [http-nio-7019-exec-1/DEBUG]: [SharedEntityManagerCreator$SharedEntityManagerInvocationHandler] Creating new EntityManager for shared EntityManager invocation
+[21:20:24] [http-nio-7019-exec-1/DEBUG]: [SharedEntityManagerCreator$SharedEntityManagerInvocationHandler] Creating new EntityManager for shared EntityManager invocation
+[21:20:24] [http-nio-7019-exec-1/DEBUG]: [RequestResponseBodyMethodProcessor] Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json]
+[21:20:24] [http-nio-7019-exec-1/DEBUG]: [RequestResponseBodyMethodProcessor] Writing [ResponseDTO(data=ru.regiuss.practice.dictinoary.server.dto.PageDTO@191863c7, success=true)]
+[21:20:24] [http-nio-7019-exec-1/DEBUG]: [DispatcherServlet] Completed 200 OK

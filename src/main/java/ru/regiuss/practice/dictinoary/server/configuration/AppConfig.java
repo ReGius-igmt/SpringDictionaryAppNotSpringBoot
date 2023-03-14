@@ -28,7 +28,7 @@ public class AppConfig implements WebMvcConfigurer {
     public ViewResolver internalResourceViewResolver() {
         InternalResourceViewResolver bean = new InternalResourceViewResolver();
         bean.setViewClass(JstlView.class);
-        bean.setPrefix("static/");
+        bean.setPrefix("/static/");
         bean.setSuffix(".html");
         return bean;
     }

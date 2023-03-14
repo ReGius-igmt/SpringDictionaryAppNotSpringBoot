@@ -2,7 +2,6 @@ package ru.regiuss.practice.dictinoary.server.repository;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 import ru.regiuss.practice.dictinoary.server.model.DictionaryFilter;
 import ru.regiuss.practice.dictinoary.server.model.Page;
 import ru.regiuss.practice.dictinoary.server.model.Word;
@@ -59,7 +58,7 @@ public class WordRepositoryImpl implements WordRepository {
         predicates.add("w.dictionary = :dictionary");
         params.put("dictionary", filter.getDictionary());
         if(filter.getSearch() != null && !filter.getSearch().isEmpty()) {
-            predicates.add("w.key like :search");
+            predicates.add("w.key like :search or (select count(1) from w.values v where v like :search) > 0");
             params.put("search", '%' + filter.getSearch() + '%');
         }
         String predicateString = String.join(" and ", predicates);
